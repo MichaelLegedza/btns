@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.buttons {
+  margin: 100px 0px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  margin: 0px auto 100px;
+  background-color: #0478B9;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 32.81px;
+  border: 0;
+  transition: .2s linear;
+}
+
+/* --- Base --- */
+
+.btn.btn--base:hover {
+  font-size: 40px;
+  line-height: 46.88px;
+  background: rgba(4, 120, 185, 0.8);
+  transition: .2s linear;
+}
+
+.btn.btn--base:active {
+  font-size: 36px;
+  line-height: 42.19px;
+  background: rgba(4, 120, 185, 0.9);
+}
+
+/* --- Rotate --- */
+
+.btn.btn--rotate:hover {
+  transform: rotate(30deg);
+}
+
+.btn.btn--rotate:active {
+  transform: rotate(-45deg);
+}
+
+/* --- Scale --- */
+
+.btn.btn--scale:hover {
+  transform: scale(2);
+}
+
+.btn.btn--scale:active {
+  transform: scale(0.5)
+}
+
+/* --- Bgcolor --- */
+
+.btn.btn--bgcolor:hover {
+  background-color: rgba(185, 4, 4, 0.8);
+}
+
+.btn.btn--bgcolor:active {
+  background-color: rgba(185, 4, 4, 0.9);
+}
+
+/* --- Color --- */
+
+.btn.btn--color:hover {
+  color: #05FF00;
+}
+
+.btn.btn--color:active {
+  color: #05FF00;
+}
+
+.buttons--before .btn::before {
+  content: url(../img/button-img.svg);
+  display: flex;
+  margin-right: 10px;
+}
+
+.buttons--before .btn--img {
+  transition: 0s;
+}
+
+.buttons--before .btn--img:hover::before {
+  content: url(../img/button-img-hover.svg);
+}
+
+
+
